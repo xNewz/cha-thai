@@ -17,5 +17,9 @@
         "path": "./themes/cha-thai-color-theme.json"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xNewz/cha-thai.git"
   }
 }

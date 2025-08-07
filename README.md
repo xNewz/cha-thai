@@ -1,16 +1,33 @@
-# cha-thai README
+# 🧋 Cha Thai Theme for VS Code
 
-## Working with Markdown
+**Cha Thai** is a warm, vibrant Visual Studio Code theme inspired by traditional Thai milk tea. With soft beige backgrounds, rich brown syntax, and highlights in tea-orange and basil green, this theme brings comfort and clarity to your daily coding sessions.
 
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
+---
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
+## 🎨 Theme Highlights
 
-## For more information
+- Soft & Refreshing: Gentle backgrounds with high readability
+- Thai-Inspired Palette: A unique mix of orange, brown, and creamy tones
+- Syntax Clarity: Carefully chosen token colors for comments, functions, variables, strings, and more
+- UI Harmony: Consistent colors across sidebars, tabs, status bar, and title bar
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+## 🖌️ Sample Palette
 
-**Enjoy!**
+| Element           | Color       | Hex Code  |
+| ----------------- | ----------- | --------- |
+| Editor Background | Light Cream | `#f9efe5` |
+| Editor Foreground | Tea Brown   | `#5a2a00` |
+| Accent Orange     | Thai Tea    | `#c97135` |
+| Active Button     | Deep Orange | `#a85a23` |
+| Comments          | Tea Orange  | `#aaaaaa` |
+| Strings           | Basil Green | `#448c27` |
+| Functions & Tags  | Thai Tea    | `#f28500` |
+| Keywords          | Deep Orange | `#d35400` |
+
+## 🚀 Installation
+
+1.	Open VS Code
+2.	Go to Extensions (Ctrl+Shift+X)
+3.	Search for Cha Thai
+4.	Click Install
+5.	Go to Command Palette → Preferences: Color Theme → Choose Cha Thai

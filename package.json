@@ -10,6 +10,7 @@
   "categories": [
     "Themes"
   ],
+  "icon": "cha-thai-icon.jpg",
   "contributes": {
     "themes": [
       {

@@ -1,0 +1,21 @@
+{
+  "name": "cha-thai",
+  "displayName": "Cha Thai",
+  "description": "A rich and vibrant VS Code theme inspired by Thai milk tea. Warm tones, smooth syntax highlighting – perfect for refreshing your code sessions.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.102.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Cha Thai",
+        "uiTheme": "vs",
+        "path": "./themes/cha-thai-color-theme.json"
+      }
+    ]
+  }
+}

@@ -35,7 +35,9 @@ this theme is designed to bring both **comfort and clarity** to your daily codin
 
 ## 📸 Screenshots
 
-> _Coming soon_ — Light & Dark editor previews with Cha Thai flavor!
+<p align="center">
+  <img width="840" height="674" alt="Cha Thai Python Example" src="https://github.com/user-attachments/assets/4008a6c2-2de9-4902-87db-45b4d171f036" />
+</p>
 
 ---
 

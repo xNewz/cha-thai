@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
       - name: Install vsce and ovsx
         run: |
@@ -45,4 +45,3 @@ jobs:
         if: secrets.OVSX_TOKEN != ''
         run: |
           ovsx publish *.vsix -p ${{ secrets.OVSX_TOKEN }}
-

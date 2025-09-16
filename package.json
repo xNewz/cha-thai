@@ -4,6 +4,7 @@
   "description": "A rich and vibrant VS Code theme inspired by Thai milk tea. Warm tones, smooth syntax highlighting – perfect for refreshing your code sessions.",
   "version": "0.0.3",
   "publisher": "pargornru",
+  "license": "MIT",
   "engines": {
     "vscode": "^1.102.0"
   },
@@ -11,6 +12,21 @@
     "Themes"
   ],
   "icon": "cha-thai-icon.jpg",
+  "galleryBanner": {
+    "color": "#f9efe5",
+    "theme": "light"
+  },
+  "keywords": [
+    "vscode-theme",
+    "theme",
+    "light",
+    "thai",
+    "cha-thai",
+    "milk tea",
+    "warm",
+    "orange",
+    "brown"
+  ],
   "contributes": {
     "themes": [
       {
@@ -23,5 +39,32 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/xNewz/cha-thai.git"
+  },
+  "bugs": {
+    "url": "https://github.com/xNewz/cha-thai/issues"
+  },
+  "homepage": "https://github.com/xNewz/cha-thai#readme",
+  "badges": [
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/v/pargornru.cha-thai",
+      "href": "https://marketplace.visualstudio.com/items?itemName=pargornru.cha-thai",
+      "description": "VS Marketplace Version"
+    },
+    {
+      "url": "https://img.shields.io/visual-studio-marketplace/d/pargornru.cha-thai",
+      "href": "https://marketplace.visualstudio.com/items?itemName=pargornru.cha-thai",
+      "description": "Downloads"
+    },
+    {
+      "url": "https://img.shields.io/github/license/xNewz/cha-thai",
+      "href": "https://github.com/xNewz/cha-thai/blob/main/LICENSE",
+      "description": "License"
+    }
+  ],
+  "scripts": {
+    "package": "npx vsce package",
+    "publish:vsce": "npx vsce publish",
+    "publish:ovsx": "npx ovsx publish",
+    "changelog:new": "git tag -l | tail -n1 | xargs -I{} echo '## [{}] - '$(date +%Y-%m-%d) >> CHANGELOG.md"
   }
 }

@@ -1,5 +1,10 @@
 # 🧋 Cha Thai Theme for VS Code
 
+[![VS Marketplace](https://img.shields.io/visual-studio-marketplace/v/pargornru.cha-thai)](https://marketplace.visualstudio.com/items?itemName=pargornru.cha-thai)
+[![Downloads](https://img.shields.io/visual-studio-marketplace/d/pargornru.cha-thai)](https://marketplace.visualstudio.com/items?itemName=pargornru.cha-thai)
+[![Open VSX](https://img.shields.io/open-vsx/v/pargornru/cha-thai)](https://open-vsx.org/extension/pargornru/cha-thai)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Cha Thai** is a warm, vibrant Visual Studio Code theme inspired by traditional Thai milk tea.
 With its soft cream backgrounds, rich tea-brown syntax, and highlights of tea-orange and basil green,
 this theme is designed to bring both **comfort and clarity** to your daily coding sessions.
@@ -51,10 +56,34 @@ this theme is designed to bring both **comfort and clarity** to your daily codin
 
 ---
 
+## 🔗 Links
+
+- Visual Studio Marketplace: https://marketplace.visualstudio.com/items?itemName=pargornru.cha-thai
+- Open VSX Registry: https://open-vsx.org/extension/pargornru/cha-thai
+- Repository: https://github.com/xNewz/cha-thai
+
+---
+
 ## 🤝 Contributing
 
 Pull requests and suggestions are welcome!
 If you find an issue or want to improve the theme, feel free to open an **Issue** or **PR** on GitHub.
+
+---
+
+## 🧑‍💻 Development
+
+- Open the repo in VS Code and press F5 to launch an Extension Development Host.
+- Switch to the theme via Command Palette → "Preferences: Color Theme" → Cha Thai.
+- Edit `themes/cha-thai-color-theme.json` and reload the window to see changes.
+
+## 📦 Packaging & Publishing
+
+- Package locally: `npm run package` (creates a `.vsix`)
+- Publish to VS Marketplace: `npm run publish:vsce` (requires VSCE token)
+- Publish to Open VSX: `npm run publish:ovsx` (requires OVSX token)
+
+See `CONTRIBUTING.md` for details.
 
 ---
 

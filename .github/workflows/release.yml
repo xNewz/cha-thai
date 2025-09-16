@@ -1,0 +1,48 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch: {}
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install vsce and ovsx
+        run: |
+          npm i -g @vscode/vsce ovsx
+
+      - name: Package VSIX
+        run: |
+          vsce package --no-dependencies
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+
+      - name: Upload VSIX to release assets
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            *.vsix
+
+      - name: Publish to VS Marketplace
+        if: secrets.VSCE_TOKEN != ''
+        run: |
+          vsce publish --packagePath *.vsix
+        env:
+          VSCE_PAT: ${{ secrets.VSCE_TOKEN }}
+
+      - name: Publish to Open VSX
+        if: secrets.OVSX_TOKEN != ''
+        run: |
+          ovsx publish *.vsix -p ${{ secrets.OVSX_TOKEN }}
+

@@ -33,6 +33,11 @@
         "label": "Cha Thai",
         "uiTheme": "vs",
         "path": "./themes/cha-thai-color-theme.json"
+      },
+      {
+        "label": "Cha Thai Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/cha-thai-dark-color-theme.json"
       }
     ]
   },

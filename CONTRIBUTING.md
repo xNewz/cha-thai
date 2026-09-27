@@ -1,50 +1,50 @@
 # Contributing to Cha Thai
 
-Thanks for your interest in improving the Cha Thai theme! Contributions are welcome and appreciated.
+First off, thank you for considering contributing to the **Cha Thai** theme! It's people like you that make the open-source community such a fantastic place to learn, inspire, and create.
 
-## Getting Started
+## 🛠️ Getting Started
 
-- Requirements: Node.js LTS, npm, VS Code
-- Install dependencies (optional, for publishing helpers):
-  - `npm install` (only if `devDependencies` are added later)
-- Run the extension in a Dev Host:
-  - Open this repo in VS Code
-  - Press F5 or use Run and Debug → "Extension"
+Before you begin, ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (LTS recommended)
+- [npm](https://www.npmjs.com/)
+- [Visual Studio Code](https://code.visualstudio.com/)
 
-## Development Tips
+### Running the Extension Locally
+1. Clone or open this repository in VS Code.
+2. Press `F5` (or navigate to **Run and Debug** → "Extension").
+3. This will open a new **Extension Development Host** window with the theme loaded.
 
-- Theme file: `themes/cha-thai-color-theme.json`
-- Icon/screenshot: `cha-thai-icon.jpg`
-- Test across languages you use most (JavaScript/TypeScript, Python, HTML/CSS, JSON, Markdown, etc.)
+## 🎨 Development Guidelines
 
-## Testing Locally
+- **Theme Files:**
+  - Light theme: `themes/cha-thai-color-theme.json`
+  - Dark theme: `themes/cha-thai-dark-color-theme.json`
+- **Testing Your Changes:**
+  - Use the Command Palette (`Ctrl+Shift+P` / `⇧⌘P`) → `Preferences: Color Theme` → select **Cha Thai** or **Cha Thai Dark**.
+  - Test across multiple languages you use most (e.g., JavaScript/TypeScript, Python, HTML/CSS, JSON, Markdown).
+  - Inspect UI elements carefully (status bar, tabs, side bar, lists, notifications).
 
-- Use the Command Palette → "Preferences: Color Theme" → select "Cha Thai"
-- Inspect UI elements: status bar, tabs, side bar, lists, notifications
-- Inspect syntax tokens: comments, strings, numbers, keywords, functions, classes, types
+## 📦 Packaging and Publishing
 
-## Packaging / Publishing
+*Note: Publishing is restricted to maintainers.*
 
-- Package a `.vsix` locally:
-  - `npm run package` (uses `vsce` via `npx`)
-- Publish to Visual Studio Marketplace:
-  - `npm run publish:vsce` (requires a VSCE token)
-- Publish to Open VSX:
-  - `npm run publish:ovsx` (requires an OVSX token)
+- **Package locally:** `npm run package` (uses `vsce` to create a `.vsix` file).
+- **Publish to VS Marketplace:** `npm run publish:vsce`
+- **Publish to Open VSX:** `npm run publish:ovsx`
 
-Tokens are stored locally via the CLI; do not commit them.
+## 📝 Pull Request Process
 
-## Pull Request Guidelines
+1. Create a feature branch from the `main` branch (e.g., `feature/new-syntax-color`).
+2. Keep your changes focused and minimal to ease the review process.
+3. If your changes alter the visual appearance, please include **Before/After screenshots** in your PR.
+4. Update `README.md` and `CHANGELOG.md` if your changes introduce new features or behavior.
+5. Ensure your JSON changes are valid and properly formatted.
 
-- Create a feature branch from `main`
-- Keep changes focused and minimal
-- Update `README.md` or `CHANGELOG.md` if behavior or visuals change
-- Ensure JSON is valid and consistent
-- Add screenshots if visual changes are significant
+## 🐛 Reporting Issues
 
-## Reporting Issues
-
-- Use GitHub Issues with a clear title and steps to reproduce
-- Include VS Code version, OS, and (if relevant) language/file samples
+If you find a bug or have a suggestion, please [open an issue](https://github.com/xNewz/cha-thai/issues).
+- Use a clear and descriptive title.
+- Provide steps to reproduce the issue.
+- Include your VS Code version, Operating System, and relevant code snippets or screenshots.
 
 Thank you for helping make Cha Thai better! 🧋
